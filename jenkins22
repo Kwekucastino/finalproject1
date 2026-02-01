@@ -16,7 +16,7 @@ node {
 
     // Stage 3: SonarQube Analysis
     stage('3. SonarQube Analysis') {
-        withCredentials([string(credentialsId: 'man', variable: 'SONAR_TOKEN')]) {
+        withCredentials([string(credentialsId: 'boy', variable: 'SONAR_TOKEN')]) {
             withMaven(maven: 'maven3.9.12') {
                 sh """
                 mvn sonar:sonar \
