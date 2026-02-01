@@ -42,7 +42,7 @@ pipeline {
                 echo '📤 Pushing Docker image to Docker Hub...'
                 withCredentials([
                     usernamePassword(
-                        credentialsId: 'dockerhub-cred',
+                        credentialsId: 'dockerhub-cred1',
                         usernameVariable: 'DOCKER_USER',
                         passwordVariable: 'DOCKER_PASS'
                     )
